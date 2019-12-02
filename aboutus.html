@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Tags</title>
+        <!-- The meta tags are used to asign meta information to the website, that information is used by webcrawlers
+        to aquire information about your web page-->
+        <!-- The name attribute is used to set the type of meta tag, and the content attribute will 
+        contain the actual content-->
+        <meta name="description" content="Educational page by Webyrinth Media">
+        <meta name="keywords" content="web design, web dev, web development, Webyrinth Media">
+        <!-- The style tags are used to add some styling without the need of a CSS file-->
+        <!-- To reference an id tag, we place a # before the id name -->
+        <style> 
+            #main-header{
+                text-align: center;
+                background-color: blueviolet;
+                color: currentColor;
+                padding: 10px;
+            }
+            #main-footer{
+                text-align: center;
+                font-size: 18px;
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- The header tags create a header for your page. Since we can use more than one header, we use the id
+        attribute to assign an identifying name to the header, same will go for the footer-->
+        <header id="main-header">
+            <h1>HTML5 Tags</h1>
+        </header>
+        <p>
+        <a href="index.html">Go to Main Page</a> * <a href="http://google.com">To Google</a>
+
+        </p>
+        <!-- The section tags create a main area section for your page-->
+        <section>
+            <!-- The article tags create an individual article block on the page-->
+            <!-- The article's class attribute determines the type of the article block section-->
+            <article class="post">
+                <h2>Blog article One</h2>
+                <!-- The small tags are used to make text smaller-->
+                <small>Posted by Webyrinth Media on November 30 2019</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit nulla magni sapiente. 
+                    Architecto aspernatur itaque atque corrupti non facere facilis, pariatur magnam harum possimus 
+                    incidunt saepe optio. Nemo, ullam.
+                </p>
+                <a href="postone.html">Read More</a>
+            </article>
+            <article class="post">
+                <h2>Blog article Two</h2>
+                <small>Posted by Webyrinth Media on November 30 2019</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit nulla magni sapiente. 
+                    Architecto aspernatur itaque atque corrupti non facere facilis, pariatur magnam harum possimus 
+                    incidunt saepe optio. Nemo, ullam.
+                </p>
+                <a href="posttwo.html">Read More</a>
+            </article>
+            <article class="post">
+                <h2>Blog article Three</h2>
+                <small>Posted by Webyrinth Media on November 30 2019</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit nulla magni sapiente. 
+                    Architecto aspernatur itaque atque corrupti non facere facilis, pariatur magnam harum possimus 
+                    incidunt saepe optio. Nemo, ullam.
+                </p>
+                <a href="postthree.html">Read More</a>
+            </article>
+        </section>
+        <!-- The aside tags create a sidebar section on the page, however CSS is needed to actually place
+        the section on the side of the page -->
+        <aside>
+            <h3>Categories</h3>
+            <!-- The nav tags will be used in CSS to take the section and decide it's proper place-->
+            <nav>
+            <ul>
+                <!-- By setting the href's value to #, we set the hyberlink to stay on the current page -->
+                <li><a href="#">Post One</a></li>
+                <li><a href="#">Post Two</a></li>
+                <li><a href="#">Post Three</a></li>
+            </ul>
+            </nav>
+        </aside>
+        <!-- the footer tags are used to create a footer section on the page -->
+        <footer id="main-footer"
+            <!-- The &copy; is used to create a copyright symbol-->
+            <p>Copyright &copy; 2019, Webyrinth</p>
+        </footer>
+    </body>
+</html>

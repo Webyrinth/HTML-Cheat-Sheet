@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Cheat Sheet</title>
+    <!-- Internal CSS, NOT RECOMENDED-->
+    <style type="text/css"> 
+        h2{
+            color: blueviolet;
+        }
+    </style> <!-- when using Internal CSS, we use style tags in the head to link to a certain set of tags
+    and style them, in out case we style the h2 tags-->
+    <!-- The best way to use CSS is the External CSS. Using the link tag within the head area will link to a css file.
+    All the styling will be done within the css file so that i can be reused with other html documents-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h3 style="color:violet">Inline CSS. DON'T EVER USE</h3> <!-- Inline CSS, HIGHLY NOT RECOMENDED-->
+    <h2>Internal CSS, CAN BE DONE BUT NOT RECOMENDED</h2>
+    <h1>External CSS is THE BEST WAY TO ADD CSS TO YOUR HTML SITE</h1>
+    <h4>This text gets styled by the style.css file just by being part of the page's body</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime nesciunt impedit 
+        tempore quas reiciendis voluptates laudantium repellat facilis neque eveniet perferendis natus, 
+        porro quod id possimus quae deleniti nemo?
+    </p>
+    <div class="box1"> <!-- we'll use the value of the class to call it in the css file-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis tenetur, nisi 
+            consequatur unde distinctio corrupti aperiam suscipit qui optio et doloremque! Ullam 
+            similique iure cum. Explicabo debitis eum itaque? Ipsa?
+        </p>
+    </div>
+    <br>
+    <div class="container">
+         <div class="box1">
+            <p>  
+                <h1>Lorem Ipsum</h1>
+                
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis tenetur, nisi 
+                consequatur unde distinctio corrupti aperiam suscipit qui optio et doloremque! Ullam 
+                similique iure cum. Explicabo debitis eum itaque? Ipsa?            
+            </p>
+        </div>   
+    </div>
+    <br>
+    <div class="container">
+        <div class="box2">
+            <p>  
+                <h1>Ipsum Dolor</h1>
+                   
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis tenetur, nisi 
+                consequatur unde distinctio corrupti aperiam suscipit qui optio et doloremque! Ullam 
+                similique iure cum. Explicabo debitis eum itaque? Ipsa?            
+            </p>
+        </div>   
+    </div>
+    <div class="categories">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+            <li><a href="#">Category 4</a></li>
+            <li><a href="#">Category 5</a></li>
+            <li><a href="test.html">Category 6</a></li>
+        </ul>
+        <form class="my-form">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <input class="button" type="submit" value="Submit" name="">
+        </form>
+        
+    </div>
+
+    <div class="block">
+            <h3>Dolor Sit Amet</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum at fugiat 
+                iusto voluptatum beatae similique? Rem, odio quae maxime nam error nesciunt nulla 
+                corporis ipsam dignissimos, aliquid eveniet placeat.
+            </p>
+        </div>
+        <div class="block">
+            <h3>Sit Amet Consectetur</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum at fugiat 
+                iusto voluptatum beatae similique? Rem, odio quae maxime nam error nesciunt nulla 
+                corporis ipsam dignissimos, aliquid eveniet placeat.
+            </p>
+        </div>
+        <div class="block">
+            <h3>Consectetur Adipisicing</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum at fugiat 
+                iusto voluptatum beatae similique? Rem, odio quae maxime nam error nesciunt nulla 
+                corporis ipsam dignissimos, aliquid eveniet placeat.
+            </p>
+        </div>
+
+        <div class="clr"></div>
+            
+        <div id="main-block">
+            <h3>Dolorem earum</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum at fugiat 
+                iusto voluptatum beatae similique? Rem, odio quae maxime nam error nesciunt nulla 
+                corporis ipsam dignissimos, aliquid eveniet placeat.
+            </p>
+        </div>
+        
+        <div id="sidebar">
+            
+            <h3>Earum at Fugiat</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum at fugiat 
+                iusto voluptatum beatae similique? Rem, odio quae maxime nam error nesciunt nulla 
+                corporis ipsam dignissimos, aliquid eveniet placeat.
+            </p>
+        </div>
+
+        <div class="clr"></div>
+
+        <div class="pos-box">
+            <h1>CSS Rocks</h1>
+            <h2>Style it up</h2>
+        </div>
+
+        <ul class="my-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+
+        <a class="fix-me button" href="index.html">To HTML Page</a>
+        <a class="fix-me2 button" href="aboutus.html">To HTML5 Page</a>
+        <a class="fix-me3 button" href="styledpage.html">To CSS Template Website</a>
+
+    <div style="margin-top:500px;"></div>
+</body>
+</html>

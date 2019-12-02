@@ -1,0 +1,115 @@
+body{
+    background-color: skyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8em;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color: slategrey;
+}
+
+#navbar{
+    background-color: grey;
+    color: whitesmoke;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: teal;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+#showcase{
+    background-image: url('../images/abstract.jpg');
+    background-size: 100%;
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: purple;
+    font-size: 40px;
+    line-height: 1.6em;
+    padding-top: 20px;
+}
+
+#main{
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background: darkgray;
+    color: whitesmoke;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-footer{
+    background: black;
+    color: wheat;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.button{
+    background-color: blueviolet;
+    color: blanchedalmond;
+    padding: 10px 15px;
+    border: chartreuse;
+}
+
+.fix-me { 
+    position: fixed;
+    top: 5%;
+    right: 1%;
+}
+
+.fix-me2 {
+    position: fixed;
+    top: 15%;
+    right: 1%;
+}
+
+.fix-me3 {
+    position: fixed;
+    top: 25%;
+    right: 1%;
+}
+
+@media(max-width: 600px){
+    #main{
+        width: 100%;
+        float: none
+    }
+
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}

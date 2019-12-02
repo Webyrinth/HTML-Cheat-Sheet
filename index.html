@@ -1,0 +1,182 @@
+<!-- standard HTML 5 declaration that lets the web browser know the version used to write this page -->
+<!DOCTYPE html> 
+<!-- all the HTML code will be written in between the <html></html> tags -->
+<html>
+    <!-- the head code block does not appaear on the page it's used to store information such as 
+    the page title, links to CSS and javascript files, metadata such as tags and keywords 
+    witch is used by search engines to obtain information about what is on the webpage -->
+    <head> 
+        <title>My first HTML Website</title>  <!-- this sets the tile of the page -->
+    </head>
+    <!-- the body code block contains the actual markup that will get displayed on the page -->
+    <body>
+        <a href="aboutus.html">HTML5 Tags</a>
+        <hr>
+        <!-- Headings. There are 6 different type of headings -->
+        <h1>This is the Header 1</h1>
+        <h2>This is the Header 2</h2>
+        <h3>This is the Header 3</h3>
+        <h4>This is the Header 4</h4>
+        <h5>This is the Header 5</h5>
+        <h6>This is the Header 6</h6>
+        <!-- The p tags crete a paragraph -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, 
+            <strong>repellat </strong> <!-- The strong tag makes the text inside it bold-->
+            deserunt ipsam modi voluptatibus tempore ipsa praesentium 
+            <em>velit ab </em> <!-- The em tag makes the text inside it italic -->
+            fugit amet iste obcaecati accusamus impedit debitis. Laborum, corrupti. 
+            <!-- The a tag wraps a link areound the text inside it. The href attribute's value 
+            will be the location to be opened by the link. The target attribute (if it's value is "_blank") 
+            will ensure that the linked page is opened in a new tab -->
+            <a href="http://google.com" target="_blank">Laboriosam.</a> 
+        </p>
+        <!-- Unordered List, creates a bulletpoint list -->
+        <ul>
+            <!-- Every list item must be between li tags -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+            <li>List Item 6</li>
+        </ul>
+        <!-- Ordered List, creates a numbered list -->
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+            <li>List Item 6</li>
+        </ol>
+        <!-- Table -->
+        <table>
+            <!-- This block holds the table titles code -->
+            <thead>
+                <!-- A set of tr tags holds the data for an individual row -->
+                <tr>
+                    <!-- Each table title will be written between th tags-->
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <!-- This block holds the table contents code -->
+            <tbody>
+                <tr>
+                    <!-- Each table entry will be written between td tags -->
+                    <td>First name</td>
+                    <td>First email</td>
+                    <td>First age</td>
+                </tr>
+                <tr>
+                    <td>Second name</td>
+                    <td>Second email</td>
+                    <td>Second age</td>
+                </tr>
+                <tr>
+                    <td>Third name</td>
+                    <td>Third email</td>
+                    <td>Third age</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br> <!-- The br tag inserts a line break -->
+        <hr> <!-- The hr tag inserts a page wide horizontal line -->
+        <br>
+
+        <!-- Forms. With HTML we can only design the look of forms. To add the functionality
+        behind the forms, we need a language like PHP -->
+        <form action="example.php" method="POST">
+        <!-- The action atribute holds the info for the page where the form data gets submited-->
+        <!-- The method atribute holds the data related to the type of action that is to be performed
+        upon recieving the data from the form, ex: POST to place the data in a database-->
+            <div> <!-- The div tags create a block level element-->
+                <label>First Name</label> <!-- The label tags hold the info for the label attached to the form-->
+                <!-- The name attribute sets the value to be attached to this form when information gets placed in the database-->
+                <!-- The type attribute decideds the type of the form. For this example we will have a textbox-->
+                <!-- The placeholder attribute sets a placeholder text in the textbox, that dissapears once the user inputs data-->
+                <input type="text" name="firstName" placeholder="Enter First Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="Enter Last Name">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <!-- The type attribute here creates a textbox with email validation-->
+                <input type="email" name="email" placeholder="Enter email"> 
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <!-- The textarea tags will add a text area to the page-->
+                <textarea name="message" placeholder="Write your message here"></textarea> 
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <!-- The select tags create a multiple selections field-->
+                <select name="gender">
+                    <!-- The option tags are used to create the items of the select fields-->
+                    <option value="male">Male</option> <!-- The value attribute holds the value of the selection fields-->
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age</label>
+                <!-- The type attribute here creates a number selection field and the value attributes 
+                sets the startin number to be displayed-->
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div>
+                <label>Birthday</label>
+                <input type="date" name="birthday"> <!-- The type attribute here creates a date selection box -->
+            </div>
+            <br>
+            <!-- The input tag will create a button on the page. This button is within the form and serves to
+            submit the form data to the link contained in the form's action variable -->
+            <input type="submit" name="submit" value="Submit">
+        </form>   
+        <br>
+        <!-- The button tags create a button on the screen, however the button needs JavaScript behind it to work-->
+        <button>Click Here</button>
+        <br>
+        <hr>
+        <br>
+        <!-- The img tag will display an image on the scree, and it uses the src attribute to store info about 
+        the location of the image to be displayed, and the alt attribute displays a text if the image isn't found-->
+        <!-- The width attribute is used to resize the image when displayed -->
+        <!-- Wraping the img tag in a set of a tags will put a link behind the image, setting the href attribute
+        value to the image's location will make the link display a full size version of the image-->
+        <a href="images/Webyrinth.png" target="_blank"> 
+        <img src="images/Webyrinth.png" alt="This is an Image placeholder" width="200">
+        </a>
+        <br>
+        <!-- Quotations-->
+        <!-- The blockquote tags will create a quoted paragraph. The cite attribute will hold the information related 
+        to the quotation's origin and it will not show up on the page-->
+        <blockquote cite="http://google.com">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam expedita molestias libero repudiandae aut 
+        amet ex itaque non modi nostrum nam sint rerum architecto, voluptate voluptas nihil cumque, numquam tenetur?
+        </blockquote>
+        <br>
+        <p>
+            <!-- The abbr tags create an info note, where the value of the title attribute becomes the text show in the note-->
+            <abbr title="Hyper Text Markup Language">HTML</abbr> is awesome
+        </p>
+        <br>
+        <p>
+            <!-- The cite tags will turn the text within it italic-->
+            <cite>HTML Cheat Sheet</cite> by Webyrinth
+        </p>
+        <div style="margin-top:500px"></div> <!-- This block level element creates an empty 500pixels wide area -->
+    </body>
+</html>

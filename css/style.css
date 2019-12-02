@@ -1,0 +1,247 @@
+*{ /* The * is used to set up properties that apply to the entire page, this is called a reset */
+    margin: 10px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{ /* This will affect the style when the element is hovered by the mouse courser */
+    color: purple;
+}
+
+a:active{
+    color: blueviolet;
+}
+
+a:visited{
+    color: red;
+}
+
+h1{
+    color:purple;
+}
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    /* Shorthand for the 3 lines above: */
+    font: bold 20px Arial, Helvetica, sans-serif;
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 75%; /* We use percentage when setting the width to make sure the container auto-adjusts whe page is resized */
+    margin: auto; /* If the margin is set to auto, the container will be centered */
+}
+
+.button{
+    background-color: blueviolet;
+    color: blanchedalmond;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover{
+    background-color: purple;
+    color: burlywood;
+}
+
+.block{
+    float:left;
+    width: 30%;
+    border: 1px solid rebeccapurple;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.clr{
+    clear:both;
+}
+
+.box1{ /* To reference a class name you place a dot in front of the class name */
+    background-color: skyblue;
+    color: slategray;
+    /* Setting borders  */
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /* Setting paddings */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* Setting margins */
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+.box1 h1{ /* This will only affect the h1 tags withing hte box1 div */
+    font-family: Tahoma;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: wavy;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1.0em;
+}
+
+.box2{
+    border: 20px dotted #ccc;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 10;
+    list-style: square;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #ccc;
+    list-style-image: url('../images/Wdot.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+/* This is how you can targed a tage based on it's type attribute, 
+and you can apply it to multiple classes, tags and types at the same time */
+.my-form input[type="text"], .my-form input[type="email"], .my-form textarea{ 
+    padding: 8px;
+    width: 50%;
+}
+
+
+
+.shorthand{
+    /*Here are some ways to set up a margin */
+    /* This way is usually used when margin sides have different value */
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    /* This is a shorthand version for method above, the order of the values is: top, right, bottom, left */
+    margin: 10px 15px 20px 25px;
+    /* This is the shorter version if the left-right are equal and/or top-bottom are equal. 
+    Top-Bottom value first, Right-Left value second */
+    margin: 10px 15px;
+    /* This is shorter way when all margins are equal */
+    margin: 10px;
+    /* These techniques can also be used when setting: padding,margin */
+
+    /* Example of a shorthand version for border*/
+    border: 5px red solid;
+    /* We can also target a single border attribute to change or asign */
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+    /* We can even target a single border's side attribute */
+    border-top-color: red;
+
+
+}
+
+#main-block{ /* When referencing an id we must use # instead of . */
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float:right;
+    width: 25%;
+    background-color: rebeccapurple;
+    color: black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.pos-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid purple;
+    position: relative; /* This allows later elements pertaining to the pos-box to be position relative to their parent */
+    background-image: url('../images/abstract.jpg');
+    background-size: 100%;
+}
+
+.pos-box h1{
+    position: absolute; /* This will position the h1 element on an absoule position that is relative to it's parent class */
+    top: 40px;
+}
+
+.pos-box h2{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+
+.fix-me { /* This will position the element with a fix-me class in a fixed position, and it will stay there regardless of page scroll */
+    position: fixed;
+    top: 50px;
+    right: 1%;
+}
+
+.fix-me2 {
+    position: fixed;
+    top: 120px;
+    right: 1%;
+}
+
+.fix-me3 {
+    position: fixed;
+    top: 190px;
+    right: 1%;
+}
+
+/* Pseudo Classes */
+/* Pseudo classes can be used to target and style individual items within another class, even if they don't have
+a class asigned */
+
+.my-list li:first-child{
+    background: rebeccapurple;
+}
+
+.my-list li:last-child{
+    background: cyan;
+}
+
+.my-list li:nth-child(3){
+    background: blue;
+}
+
+.my-list li:nth-child(even){
+    background: navy;
+}
